@@ -10,8 +10,8 @@ import javax.xml.ws.handler.MessageContext;
 
 import com.ipartek.peliculas.Pelicula;
 import com.ipartek.peliculas.PeliculaMensaje;
-import com.ipartek.peliculas.PeliculaServiceWSImp;
-import com.ipartek.peliculas.Peliculaservice;
+import com.ipartek.peliculas.PeliculasServiceWSImp;
+import com.ipartek.peliculas.Peliculasservice;
 
 public class Main {
 
@@ -21,8 +21,8 @@ public class Main {
 		//tiene que ser un mapa de strin con object 
 		//recogo los encabezados del servidor antes de procesar la respuesta(cliente-servido)
 		
-		Peliculaservice cliente = new Peliculaservice();
-		PeliculaServiceWSImp clientesoap = cliente.getPeliculaServiceWSImpPort();
+		Peliculasservice cliente = new Peliculasservice();
+		PeliculasServiceWSImp clientesoap = cliente.getPeliculasServiceWSImpPort();
 		
 		
 		

@@ -16,11 +16,11 @@ import javax.xml.ws.ResponseWrapper;
  * Generated source version: 2.1
  * 
  */
-@WebService(name = "PeliculaServiceWSImp", targetNamespace = "http://com.ipartek.formacion/types")
+@WebService(name = "PeliculasServiceWSImp", targetNamespace = "http://com.ipartek.formacion/types")
 @XmlSeeAlso({
     ObjectFactory.class
 })
-public interface PeliculaServiceWSImp {
+public interface PeliculasServiceWSImp {
 
 
     /**
