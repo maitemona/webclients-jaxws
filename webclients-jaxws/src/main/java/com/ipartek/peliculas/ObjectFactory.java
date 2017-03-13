@@ -35,19 +35,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link Pelicula }
+     * Create an instance of {@link ObtenerporidResponse }
      * 
      */
-    public Pelicula createPelicula() {
-        return new Pelicula();
-    }
-
-    /**
-     * Create an instance of {@link PeliculaMensaje }
-     * 
-     */
-    public PeliculaMensaje createPeliculaMensaje() {
-        return new PeliculaMensaje();
+    public ObtenerporidResponse createObtenerporidResponse() {
+        return new ObtenerporidResponse();
     }
 
     /**
@@ -59,11 +51,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ObtenerporidResponse }
+     * Create an instance of {@link PeliculaMensaje }
      * 
      */
-    public ObtenerporidResponse createObtenerporidResponse() {
-        return new ObtenerporidResponse();
+    public PeliculaMensaje createPeliculaMensaje() {
+        return new PeliculaMensaje();
+    }
+
+    /**
+     * Create an instance of {@link Pelicula }
+     * 
+     */
+    public Pelicula createPelicula() {
+        return new Pelicula();
     }
 
     /**

@@ -30,22 +30,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link NucleosPorMunicipioResponse }
-     * 
-     */
-    public NucleosPorMunicipioResponse createNucleosPorMunicipioResponse() {
-        return new NucleosPorMunicipioResponse();
-    }
-
-    /**
-     * Create an instance of {@link Portal }
-     * 
-     */
-    public Portal createPortal() {
-        return new Portal();
-    }
-
-    /**
      * Create an instance of {@link PortalesPorCalleResponse }
      * 
      */
@@ -62,19 +46,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link NucleosPorMunicipio }
+     * Create an instance of {@link Municipios }
      * 
      */
-    public NucleosPorMunicipio createNucleosPorMunicipio() {
-        return new NucleosPorMunicipio();
-    }
-
-    /**
-     * Create an instance of {@link Municipio }
-     * 
-     */
-    public Municipio createMunicipio() {
-        return new Municipio();
+    public Municipios createMunicipios() {
+        return new Municipios();
     }
 
     /**
@@ -86,27 +62,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link CallesPorNucleoResponse }
+     * Create an instance of {@link ArrayOfPortal }
      * 
      */
-    public CallesPorNucleoResponse createCallesPorNucleoResponse() {
-        return new CallesPorNucleoResponse();
+    public ArrayOfPortal createArrayOfPortal() {
+        return new ArrayOfPortal();
     }
 
     /**
-     * Create an instance of {@link ArrayOfNucleo }
+     * Create an instance of {@link Portal }
      * 
      */
-    public ArrayOfNucleo createArrayOfNucleo() {
-        return new ArrayOfNucleo();
-    }
-
-    /**
-     * Create an instance of {@link Nucleo }
-     * 
-     */
-    public Nucleo createNucleo() {
-        return new Nucleo();
+    public Portal createPortal() {
+        return new Portal();
     }
 
     /**
@@ -126,11 +94,35 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link MunicipiosResponse }
+     * Create an instance of {@link ArrayOfMunicipio }
      * 
      */
-    public MunicipiosResponse createMunicipiosResponse() {
-        return new MunicipiosResponse();
+    public ArrayOfMunicipio createArrayOfMunicipio() {
+        return new ArrayOfMunicipio();
+    }
+
+    /**
+     * Create an instance of {@link ArrayOfInt }
+     * 
+     */
+    public ArrayOfInt createArrayOfInt() {
+        return new ArrayOfInt();
+    }
+
+    /**
+     * Create an instance of {@link Municipio }
+     * 
+     */
+    public Municipio createMunicipio() {
+        return new Municipio();
+    }
+
+    /**
+     * Create an instance of {@link Nucleo }
+     * 
+     */
+    public Nucleo createNucleo() {
+        return new Nucleo();
     }
 
     /**
@@ -142,19 +134,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ArrayOfPortal }
+     * Create an instance of {@link ArrayOfNucleo }
      * 
      */
-    public ArrayOfPortal createArrayOfPortal() {
-        return new ArrayOfPortal();
+    public ArrayOfNucleo createArrayOfNucleo() {
+        return new ArrayOfNucleo();
     }
 
     /**
-     * Create an instance of {@link ArrayOfMunicipio }
+     * Create an instance of {@link NucleosPorMunicipioResponse }
      * 
      */
-    public ArrayOfMunicipio createArrayOfMunicipio() {
-        return new ArrayOfMunicipio();
+    public NucleosPorMunicipioResponse createNucleosPorMunicipioResponse() {
+        return new NucleosPorMunicipioResponse();
     }
 
     /**
@@ -166,19 +158,27 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link Municipios }
+     * Create an instance of {@link NucleosPorMunicipio }
      * 
      */
-    public Municipios createMunicipios() {
-        return new Municipios();
+    public NucleosPorMunicipio createNucleosPorMunicipio() {
+        return new NucleosPorMunicipio();
     }
 
     /**
-     * Create an instance of {@link ArrayOfInt }
+     * Create an instance of {@link MunicipiosResponse }
      * 
      */
-    public ArrayOfInt createArrayOfInt() {
-        return new ArrayOfInt();
+    public MunicipiosResponse createMunicipiosResponse() {
+        return new MunicipiosResponse();
+    }
+
+    /**
+     * Create an instance of {@link CallesPorNucleoResponse }
+     * 
+     */
+    public CallesPorNucleoResponse createCallesPorNucleoResponse() {
+        return new CallesPorNucleoResponse();
     }
 
 }

@@ -17,7 +17,7 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.1
  * 
  */
-@WebServiceClient(name = "peliculasservice", targetNamespace = "http://com.ipartek.formacion/types", wsdlLocation = "http://localhost:8080/webservices-jxws/peliculasws?wsdl")
+@WebServiceClient(name = "peliculasservice", targetNamespace = "http://com.ipartek.formacion/types", wsdlLocation = "http://localhost:8080/webservices-jaxws/peliculasws?wsdl")
 public class Peliculasservice
     extends Service
 {
@@ -30,9 +30,9 @@ public class Peliculasservice
         try {
             URL baseUrl;
             baseUrl = com.ipartek.peliculas.Peliculasservice.class.getResource(".");
-            url = new URL(baseUrl, "http://localhost:8080/webservices-jxws/peliculasws?wsdl");
+            url = new URL(baseUrl, "http://localhost:8080/webservices-jaxws/peliculasws?wsdl");
         } catch (MalformedURLException e) {
-            logger.warning("Failed to create URL for the wsdl Location: 'http://localhost:8080/webservices-jxws/peliculasws?wsdl', retrying as a local file");
+            logger.warning("Failed to create URL for the wsdl Location: 'http://localhost:8080/webservices-jaxws/peliculasws?wsdl', retrying as a local file");
             logger.warning(e.getMessage());
         }
         PELICULASSERVICE_WSDL_LOCATION = url;
