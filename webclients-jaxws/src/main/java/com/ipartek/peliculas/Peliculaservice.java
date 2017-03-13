@@ -17,7 +17,7 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.1
  * 
  */
-@WebServiceClient(name = "peliculaservice", targetNamespace = "http://com.formacion.ipartek/types", wsdlLocation = "http://localhost:8080/webservices-jwxs/peliculasws?wsdl")
+@WebServiceClient(name = "peliculaservice", targetNamespace = "http://com.ipartek.formacion/types", wsdlLocation = "http://localhost:8080/webservices-jwxs/peliculasws?wsdl")
 public class Peliculaservice
     extends Service
 {
@@ -43,7 +43,7 @@ public class Peliculaservice
     }
 
     public Peliculaservice() {
-        super(PELICULASERVICE_WSDL_LOCATION, new QName("http://com.formacion.ipartek/types", "peliculaservice"));
+        super(PELICULASERVICE_WSDL_LOCATION, new QName("http://com.ipartek.formacion/types", "peliculaservice"));
     }
 
     /**
@@ -53,7 +53,7 @@ public class Peliculaservice
      */
     @WebEndpoint(name = "PeliculaServiceWSImpPort")
     public PeliculaServiceWSImp getPeliculaServiceWSImpPort() {
-        return super.getPort(new QName("http://com.formacion.ipartek/types", "PeliculaServiceWSImpPort"), PeliculaServiceWSImp.class);
+        return super.getPort(new QName("http://com.ipartek.formacion/types", "PeliculaServiceWSImpPort"), PeliculaServiceWSImp.class);
     }
 
     /**
@@ -65,7 +65,7 @@ public class Peliculaservice
      */
     @WebEndpoint(name = "PeliculaServiceWSImpPort")
     public PeliculaServiceWSImp getPeliculaServiceWSImpPort(WebServiceFeature... features) {
-        return super.getPort(new QName("http://com.formacion.ipartek/types", "PeliculaServiceWSImpPort"), PeliculaServiceWSImp.class, features);
+        return super.getPort(new QName("http://com.ipartek.formacion/types", "PeliculaServiceWSImpPort"), PeliculaServiceWSImp.class, features);
     }
 
 }

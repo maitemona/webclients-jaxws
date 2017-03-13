@@ -24,46 +24,14 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _Obtenerpoid_QNAME = new QName("http://com.formacion.ipartek/types", "obtenerpoid");
-    private final static QName _ObtenerpoidResponse_QNAME = new QName("http://com.formacion.ipartek/types", "obtenerpoidResponse");
+    private final static QName _ObtenerporidResponse_QNAME = new QName("http://com.ipartek.formacion/types", "obtenerporidResponse");
+    private final static QName _Obtenerporid_QNAME = new QName("http://com.ipartek.formacion/types", "obtenerporid");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.ipartek.peliculas
      * 
      */
     public ObjectFactory() {
-    }
-
-    /**
-     * Create an instance of {@link ObtenerpoidResponse }
-     * 
-     */
-    public ObtenerpoidResponse createObtenerpoidResponse() {
-        return new ObtenerpoidResponse();
-    }
-
-    /**
-     * Create an instance of {@link Obtenerpoid }
-     * 
-     */
-    public Obtenerpoid createObtenerpoid() {
-        return new Obtenerpoid();
-    }
-
-    /**
-     * Create an instance of {@link PeliculaMensaje }
-     * 
-     */
-    public PeliculaMensaje createPeliculaMensaje() {
-        return new PeliculaMensaje();
-    }
-
-    /**
-     * Create an instance of {@link Pelicula }
-     * 
-     */
-    public Pelicula createPelicula() {
-        return new Pelicula();
     }
 
     /**
@@ -75,21 +43,53 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Obtenerpoid }{@code >}}
+     * Create an instance of {@link ObtenerporidResponse }
      * 
      */
-    @XmlElementDecl(namespace = "http://com.formacion.ipartek/types", name = "obtenerpoid")
-    public JAXBElement<Obtenerpoid> createObtenerpoid(Obtenerpoid value) {
-        return new JAXBElement<Obtenerpoid>(_Obtenerpoid_QNAME, Obtenerpoid.class, null, value);
+    public ObtenerporidResponse createObtenerporidResponse() {
+        return new ObtenerporidResponse();
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ObtenerpoidResponse }{@code >}}
+     * Create an instance of {@link Obtenerporid }
      * 
      */
-    @XmlElementDecl(namespace = "http://com.formacion.ipartek/types", name = "obtenerpoidResponse")
-    public JAXBElement<ObtenerpoidResponse> createObtenerpoidResponse(ObtenerpoidResponse value) {
-        return new JAXBElement<ObtenerpoidResponse>(_ObtenerpoidResponse_QNAME, ObtenerpoidResponse.class, null, value);
+    public Obtenerporid createObtenerporid() {
+        return new Obtenerporid();
+    }
+
+    /**
+     * Create an instance of {@link Pelicula }
+     * 
+     */
+    public Pelicula createPelicula() {
+        return new Pelicula();
+    }
+
+    /**
+     * Create an instance of {@link PeliculaMensaje }
+     * 
+     */
+    public PeliculaMensaje createPeliculaMensaje() {
+        return new PeliculaMensaje();
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ObtenerporidResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://com.ipartek.formacion/types", name = "obtenerporidResponse")
+    public JAXBElement<ObtenerporidResponse> createObtenerporidResponse(ObtenerporidResponse value) {
+        return new JAXBElement<ObtenerporidResponse>(_ObtenerporidResponse_QNAME, ObtenerporidResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Obtenerporid }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://com.ipartek.formacion/types", name = "obtenerporid")
+    public JAXBElement<Obtenerporid> createObtenerporid(Obtenerporid value) {
+        return new JAXBElement<Obtenerporid>(_Obtenerporid_QNAME, Obtenerporid.class, null, value);
     }
 
 }

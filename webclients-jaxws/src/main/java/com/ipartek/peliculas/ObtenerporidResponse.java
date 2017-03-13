@@ -8,16 +8,16 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for obtenerpoidResponse complex type.
+ * <p>Java class for obtenerporidResponse complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="obtenerpoidResponse">
+ * &lt;complexType name="obtenerporidResponse">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="return" type="{http://com.formacion.ipartek/types}peliculaMensaje" minOccurs="0"/>
+ *         &lt;element name="return" type="{http://com.ipartek.formacion/types}peliculaMensaje" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -27,10 +27,10 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "obtenerpoidResponse", propOrder = {
+@XmlType(name = "obtenerporidResponse", propOrder = {
     "_return"
 })
-public class ObtenerpoidResponse {
+public class ObtenerporidResponse {
 
     @XmlElement(name = "return")
     protected PeliculaMensaje _return;
