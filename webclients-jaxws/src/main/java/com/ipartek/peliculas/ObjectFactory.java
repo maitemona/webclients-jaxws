@@ -24,7 +24,9 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
+    private final static QName _Obtenerall_QNAME = new QName("http://com.ipartek.formacion/types", "obtenerall");
     private final static QName _ObtenerporidResponse_QNAME = new QName("http://com.ipartek.formacion/types", "obtenerporidResponse");
+    private final static QName _ObtenerallResponse_QNAME = new QName("http://com.ipartek.formacion/types", "obtenerallResponse");
     private final static QName _Obtenerporid_QNAME = new QName("http://com.ipartek.formacion/types", "obtenerporid");
 
     /**
@@ -32,30 +34,6 @@ public class ObjectFactory {
      * 
      */
     public ObjectFactory() {
-    }
-
-    /**
-     * Create an instance of {@link ObtenerporidResponse }
-     * 
-     */
-    public ObtenerporidResponse createObtenerporidResponse() {
-        return new ObtenerporidResponse();
-    }
-
-    /**
-     * Create an instance of {@link Obtenerporid }
-     * 
-     */
-    public Obtenerporid createObtenerporid() {
-        return new Obtenerporid();
-    }
-
-    /**
-     * Create an instance of {@link PeliculaMensaje }
-     * 
-     */
-    public PeliculaMensaje createPeliculaMensaje() {
-        return new PeliculaMensaje();
     }
 
     /**
@@ -75,12 +53,78 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link Obtenerporid }
+     * 
+     */
+    public Obtenerporid createObtenerporid() {
+        return new Obtenerporid();
+    }
+
+    /**
+     * Create an instance of {@link ObtenerporidResponse }
+     * 
+     */
+    public ObtenerporidResponse createObtenerporidResponse() {
+        return new ObtenerporidResponse();
+    }
+
+    /**
+     * Create an instance of {@link Obtenerall }
+     * 
+     */
+    public Obtenerall createObtenerall() {
+        return new Obtenerall();
+    }
+
+    /**
+     * Create an instance of {@link PeliculaMensaje }
+     * 
+     */
+    public PeliculaMensaje createPeliculaMensaje() {
+        return new PeliculaMensaje();
+    }
+
+    /**
+     * Create an instance of {@link ObtenerallResponse }
+     * 
+     */
+    public ObtenerallResponse createObtenerallResponse() {
+        return new ObtenerallResponse();
+    }
+
+    /**
+     * Create an instance of {@link PeliculaColeccion }
+     * 
+     */
+    public PeliculaColeccion createPeliculaColeccion() {
+        return new PeliculaColeccion();
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Obtenerall }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://com.ipartek.formacion/types", name = "obtenerall")
+    public JAXBElement<Obtenerall> createObtenerall(Obtenerall value) {
+        return new JAXBElement<Obtenerall>(_Obtenerall_QNAME, Obtenerall.class, null, value);
+    }
+
+    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ObtenerporidResponse }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://com.ipartek.formacion/types", name = "obtenerporidResponse")
     public JAXBElement<ObtenerporidResponse> createObtenerporidResponse(ObtenerporidResponse value) {
         return new JAXBElement<ObtenerporidResponse>(_ObtenerporidResponse_QNAME, ObtenerporidResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ObtenerallResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://com.ipartek.formacion/types", name = "obtenerallResponse")
+    public JAXBElement<ObtenerallResponse> createObtenerallResponse(ObtenerallResponse value) {
+        return new JAXBElement<ObtenerallResponse>(_ObtenerallResponse_QNAME, ObtenerallResponse.class, null, value);
     }
 
     /**

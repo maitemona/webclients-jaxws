@@ -11,15 +11,13 @@ import java.util.Map;
 import javax.xml.ws.BindingProvider;
 import javax.xml.ws.handler.MessageContext;
 import com.ipartek.peliculas.Pelicula;
+import com.ipartek.peliculas.PeliculaColeccion;
 import com.ipartek.peliculas.PeliculaMensaje;
 import com.ipartek.peliculas.PeliculasServiceWSImp;
 import com.ipartek.peliculas.Peliculasservice;
 
 
 public class Main {
-
-
-    
     
     public static void main(String[] args) throws MalformedURLException {
     
@@ -35,10 +33,10 @@ public class Main {
 
         // Introduzco los datos en el encabezado de la peticion
         requestHeaders.put("sessionId", Collections.singletonList("ipsession"));
+        requestHeaders.put("usuario", Collections.singletonList("maite"));
+        requestHeaders.put("password", Collections.singletonList("locodia"));
         requestContext.put(MessageContext.HTTP_REQUEST_HEADERS, requestHeaders);
         
-        
-         
         //
         PeliculaMensaje respuesta = clientesoap.obtenerporid(2);
         if (respuesta.getPelicula() == null) {
@@ -47,7 +45,15 @@ public class Main {
             Pelicula pelicula = respuesta.getPelicula();
             System.out.println(pelicula.getTitulo());
         }
-
+        
+        PeliculaColeccion respuestalista = clientesoap.obtenerall();
+        if (respuestalista.getPelicula() == null) {
+            System.out.println("No hay peliculas");
+        } else {
+        	 System.out.println("hay peliculas"+respuestalista);
+        }
+        
+       
     }
 
 }
