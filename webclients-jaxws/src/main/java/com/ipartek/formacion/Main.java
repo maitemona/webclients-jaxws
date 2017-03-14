@@ -50,10 +50,10 @@ public class Main {
         if (respuestalista.getPelicula() == null) {
             System.out.println("No hay peliculas");
         } else {
-        	int len=respuestalista.getPeliculas().size();
-			List<Pelicula> pelis=respuestalista.getPeliculas();
+        	int len=respuestalista.getPelicula().size();
+			List<Pelicula> pelis=respuestalista.getPelicula();
 			for(int i=0;i<len;i++){
-				System.out.println(String.valueOf(pelis.get(i).getTitulo()+" "+pelis.get(i).getFestreno()+" "+pelis.get(i).getGenero().getNombre());
+				System.out.println(String.valueOf(pelis.get(i).getTitulo()+""+pelis.get(i).getGenero().getNombre()));
 			}
         }
         
